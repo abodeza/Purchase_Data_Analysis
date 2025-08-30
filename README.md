@@ -38,7 +38,7 @@ pip install -r requirements.txt
 REM Create .streamlit folder
 mkdir .streamlit
 
-REM Copy example files - [FILL IN]
+REM Copy example files - FILL IN YOUR SECRETS
 copy .env.example .env
 copy .streamlit\secrets.toml.example .streamlit\secrets.toml
 
