@@ -35,6 +35,9 @@ py -3.10 -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
 
+REM ----- Disambiguation data for Camel-tools -----
+camel_data -i light
+
 REM Create .streamlit folder
 mkdir .streamlit
 
