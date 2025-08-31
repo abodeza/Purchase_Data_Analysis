@@ -3,6 +3,7 @@ pandas~=2.3.2
 matplotlib>=3.5.0
 openpyxl
 scikit-learn~=1.3.0
+nltk
 
 # Core logic & APIs
 requests>=2.32
