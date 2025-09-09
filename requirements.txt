@@ -16,6 +16,7 @@ bertopic
 sentence-transformers
 umap-learn
 hdbscan
+gensim
 scikit-learn
 numpy
 scipy
