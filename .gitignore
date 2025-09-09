@@ -201,3 +201,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Relevent to this repo only
+wiki.ar.vec
+wiki.en.vec
