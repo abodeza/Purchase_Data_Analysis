@@ -3,7 +3,8 @@ import pandas as pd
 import streamlit as st
 from pathlib import Path
 
-DEFAULT_DATA_PATH = "processed-purchase-order-items.xlsx"
+HERE = Path(__file__).parent   # streamlit_app/
+DEFAULT_DATA_PATH = HERE / "processed-purchase-order-items.xlsx"
 
 @st.cache_data(show_spinner=False)
 def load_data(path: str | None = None) -> pd.DataFrame:
