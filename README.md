@@ -16,10 +16,17 @@ Link + screenshots
 * Used python 3.10
 * Required libraries (listed in requirements.txt)
 
-### Installation
+### Running locally
 
 ```bash
+py -3.10 -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
 
+REM ----- Disambiguation data for Camel-tools -----
+camel_data -i light
+
+streamlit run home.py
 ```
 
 
