@@ -17,9 +17,9 @@ c1, c2, c3, c4 = st.columns(4)
 with c1:
     st.metric("Total Spend", f"{spend:,.2f}")
 with c2:
-    st.metric("Unique Items", kpi_unique(fdf, "Item ID") if "Item ID" in fdf.columns else fdf.shape[0])
+    st.metric("Unique Items Purchased", kpi_unique(fdf, "Item Name Cleaned") if "Item Name Cleaned" in fdf.columns else fdf.shape[0])
 with c3:
-    st.metric("Unique POs", kpi_unique(fdf, "Purchase Order ID"))
+    st.metric("Unique Purchase Orders", kpi_unique(fdf, "Purchase Order ID"))
 with c4:
     st.metric("Avg Unit Price", f"{fdf['Unit Price'].mean(skipna=True):,.2f}" if "Unit Price" in fdf.columns else "—")
 
