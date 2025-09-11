@@ -3,25 +3,26 @@
 Analysis and categorization of purchase order data.
 
 ## Description
-
-
+In this project, we cleaned, analyzed, categorized, and created an interactive dashboard for the dataset of purchase order items that came in both English and Arabic. The main challenge was that the text was messy, unstructured, and often inconsistent. My goal was to create a system that can categorize these items meaningfully so that we can later analyze patterns in spending.
 
 ## Demo
-Link + screenshots
+Try the demo [here](https://purchase-data-analysis-abdullah.streamlit.app/)
+
+![Alt text](assets/demo.png)
 
 ## Getting Started
 
 ### Prerequisites
 
 * Used python 3.10
-* Required libraries (listed in requirements.txt)
+* Required libraries (listed in main_requirements.txt)
 
 ### Running locally
 
 ```bash
 py -3.10 -m venv .venv
 .venv\Scripts\activate
-pip install -r requirements.txt
+pip install -r main_requirements.txt
 
 REM ----- Disambiguation data for Camel-tools -----
 camel_data -i light
@@ -38,16 +39,16 @@ Purchase_data_analysis/
 ├── .gitignore    
 ├── LICENSE    
 ├── README.md    
-├── requirements.txt  
+├── main_requirements.txt                   # Main requirements for repo - don't confuse with streamlit's
 ├── assets/    
 │   ├── AR_stop_words.txt
 │   ├── MUSE.png
 │   ├── trie_diagram.png
 │   ├── unigram_laplace_smoothing.png
-│   ├── wiki.trimmed.align.vec
+│   ├── wiki.trimmed.align.vec              # A shortened version of wiki.xx.align.vec from FastText
 │   └── models/
-│       ├── kmeans_best.pkl 
-│       └── umap_best.pkl
+│       ├── kmeans_best.pkl                 # K-Means model
+│       └── umap_best.pkl                   # UMAP model used
 ├── data/
 │   ├── processed-purchase-order-items.xlsx # Processed dataset
 │   ├── purchase-order-items.xlsx           # Origianl dataset
